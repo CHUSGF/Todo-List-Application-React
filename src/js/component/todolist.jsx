@@ -26,8 +26,8 @@ const TodoList = () => {
 	};
 
 	return (
-		<div className="container-fluid ">
-			<div className="input">
+		<div>
+			<div className="input mb-2 fs-5">
 				<input
 					type="text"
 					onKeyPressCapture={(e) => handleKey(e)}
@@ -41,18 +41,25 @@ const TodoList = () => {
 				/>
 			</div>
 			<div>
-				<ul className="table ">
+				<ul className="list-group ">
 					{TodoList.map((value, index) => (
-						<li key={index} className="list">
+						<li
+							key={index}
+							className=" list-group-item mb-1 p-1 border border-dark d-flex justify-content-between">
 							{value}
 							<button
-								className="btn DelItem"
+								className="btn btn-outline-danger btn-sm DelItem"
 								onClick={() => DeleteItems(index)}>
-								<i class="fas fa-trash-alt"></i>
+								❌
 							</button>
 						</li>
 					))}
 				</ul>
+				<div>
+					<span className="badge bg-light text-dark me-2">
+						Total Tasks: {TodoList.length}
+					</span>
+				</div>
 			</div>
 		</div>
 	);

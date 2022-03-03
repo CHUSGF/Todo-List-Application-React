@@ -1,34 +1,22 @@
 body{
-    background-color: rgb(255, 142, 0);
-    justify-content: center;
-}
-
-.container {
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(13,71,71,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    margin-top: 3rem;
-    width: 40rem;
-    font-size: 150%;
-}
-.title{
-    background-color: rgb(255, 23, 0);
-    font-size: 150%;
-    
-    padding: 2rem;
-    border-radius: 0.8rem;
-    justify-content: space-between;
-    font-style: italic;
-}
-input{
-    background-color: rgb(6, 255, 0);
-    width: 100%;
-   
 }
 
-ul, li{
-    background-color: rgb(6, 255, 0);
+
+.todo{
+    background-color: whitesmoke;
+    border-radius: 0.8rem;
+    max-width:70%;
+
 }
-li{
-    list-style: none;
+
+input{
+     width: 100%;
 }
+
+
 
 
